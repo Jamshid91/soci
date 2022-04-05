@@ -1,6 +1,14 @@
 const menuBurger = document.querySelector('.menu-burger'),
-      mobileMenu = document.querySelector('.mobile-menu')
+      mobileMenu = document.querySelector('.mobile-menu'),
+      loader = document.querySelector('.loader')
 
+
+      window.onload = function () {
+        setTimeout(() => {
+            loader.classList.add('d-none');
+            window.scrollTo(0, 0);
+        }, 1000);
+    }
 
 menuBurger.addEventListener('click', () => {
     menuBurger.classList.toggle('change')
@@ -137,3 +145,13 @@ prevArrow: `<button class="slick-prev">
     };
   });
 })();
+
+
+wow = new WOW({
+  boxClass: 'wow',
+  animateClass: 'animated',
+  offset: 0,
+  mobile: false,
+  live: false
+})
+wow.init();
