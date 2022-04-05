@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soci</title>
+    <link rel="stylesheet" href="assets/styles/plugins/slick-theme.css">
+    <link rel="stylesheet" href="assets/styles/plugins/slick.css">
+    <link rel="stylesheet" href="assets/styles/plugins/animate.css">
+    <link rel="stylesheet" href="assets/styles/plugins/bootstrap.css">
+    <link rel="stylesheet" href="assets/styles/css/main.css">
+</head>
+
+<body>
+    <header id="header" class="header position-relative">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-lg-2 col-4">
+                    <a href="#" class="logo">
+                        <img loading="lazy" src="assets/images/png/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-lg-5 d-none d-lg-flex">
+                    <div class="header-item d-flex align-items-center justify-content-center w-100"><a href="#" class="header-item__link">world</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="header-item d-flex align-items-center justify-content-center w-100"><a href="#" class="header-item__link">verse</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="header-item d-flex align-items-center justify-content-center w-100"><a href="#" class="header-item__link">cubes</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="header-item d-flex align-items-center justify-content-center w-100"><a href="#" class="header-item__link">lightpaper</a>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 d-none d-lg-flex align-items-center justify-content-between">
+                    <a href="#" class="contact">
+                        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M41 21C41 9.40078 31.823 0 20.5 0C9.17695 0 0 9.40078 0 21C0 31.4836 7.49531 40.1707 17.2969 41.7457V27.0703H12.0918V21H17.2969V16.3734C17.2969 11.1111 20.3559 8.20312 25.0404 8.20312C27.2826 8.20312 29.6289 8.61328 29.6289 8.61328V13.7812H27.0424C24.4959 13.7812 23.7031 15.4014 23.7031 17.0625V21H29.3887L28.4798 27.0703H23.7031V41.7457C33.5047 40.1707 41 31.4836 41 21Z" fill="#AF19AC"/>
+                            <path d="M28.4798 27.0703L29.3887 21H23.7031V17.0625C23.7031 15.4014 24.4959 13.7812 27.0424 13.7812H29.6289V8.61328C29.6289 8.61328 27.2826 8.20312 25.0404 8.20312C20.3559 8.20312 17.2969 11.1111 17.2969 16.3734V21H12.0918V27.0703H17.2969V41.7457C18.3419 41.9139 19.4109 42 20.5 42C21.5891 42 22.6581 41.9139 23.7031 41.7457V27.0703H28.4798Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="contact">
+                        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21C0 9.40202 9.17816 0 20.5 0C31.8218 0 41 9.40202 41 21C41 32.598 31.8218 42 20.5 42C9.17816 42 0 32.598 0 21Z" fill="#AF19AC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.886 17.0691L19.929 17.7957L19.2121 17.7067C16.6023 17.3657 14.3224 16.2089 12.3866 14.2663L11.4402 13.3024L11.1964 14.0142C10.6802 15.6009 11.01 17.2767 12.0854 18.4037C12.659 19.0266 12.53 19.1155 11.5405 18.7448C11.1964 18.6262 10.8953 18.5372 10.8666 18.5817C10.7662 18.6855 11.1104 20.035 11.3828 20.5688C11.7556 21.3103 12.5156 22.037 13.3473 22.467L14.0499 22.8081L13.2182 22.8229C12.4152 22.8229 12.3866 22.8378 12.4726 23.1492C12.7594 24.1131 13.8922 25.1363 15.154 25.5812L16.0431 25.8926L15.2688 26.3672C14.1216 27.0493 12.7737 27.4349 11.4258 27.4646C10.7806 27.4794 10.25 27.5387 10.25 27.5832C10.25 27.7315 11.9994 28.562 13.0175 28.8882C16.0718 29.8521 19.6996 29.4369 22.4241 27.7908C24.3599 26.6193 26.2957 24.291 27.1991 22.037C27.6866 20.8358 28.1742 18.641 28.1742 17.5881C28.1742 16.9059 28.2172 16.817 29.0202 16.0013C29.4934 15.5268 29.9379 15.0078 30.0239 14.8595C30.1673 14.5777 30.153 14.5777 29.4217 14.8298C28.2028 15.2747 28.0308 15.2154 28.633 14.548C29.0775 14.0735 29.6081 13.2134 29.6081 12.9613C29.6081 12.9168 29.393 12.9909 29.1492 13.1244C28.8911 13.2727 28.3176 13.4951 27.8874 13.6286L27.113 13.8807L26.4104 13.3913C26.0233 13.1244 25.4784 12.8278 25.1916 12.7388C24.4603 12.5312 23.3418 12.5609 22.6822 12.7982C20.8898 13.4655 19.757 15.1857 19.886 17.0691Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="contact">
+                        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21C0 9.40202 9.17816 0 20.5 0C31.8218 0 41 9.40202 41 21C41 32.598 31.8218 42 20.5 42C9.17816 42 0 32.598 0 21Z" fill="#AF19AC"/>
+                            <path d="M14.7931 12.9699C14.7629 11.5679 13.7842 10.5 12.1949 10.5C10.6057 10.5 9.56665 11.5679 9.56665 12.9699C9.56665 14.3428 10.575 15.4414 12.1346 15.4414H12.1643C13.7842 15.4414 14.7931 14.3428 14.7931 12.9699Z" fill="white"/>
+                            <path d="M14.4871 17.3932H9.84137V31.6922H14.4871V17.3932Z" fill="white"/>
+                            <path d="M25.8925 17.0574C28.9496 17.0574 31.2415 19.1015 31.2415 23.4935L31.2413 31.6921H26.5957V24.0422C26.5957 22.1207 25.9235 20.8095 24.2417 20.8095C22.9582 20.8095 22.1937 21.6934 21.8579 22.5472C21.7351 22.8531 21.705 23.2794 21.705 23.7068V31.6925H17.0586C17.0586 31.6925 17.1199 18.7353 17.0586 17.3935H21.705V19.4189C22.3216 18.4452 23.4259 17.0574 25.8925 17.0574Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="contact">
+                        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21C0 9.40202 9.17816 0 20.5 0C31.8218 0 41 9.40202 41 21C41 32.598 31.8218 42 20.5 42C9.17816 42 0 32.598 0 21Z" fill="#AF19AC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M31.4333 20.9845C31.4333 21.7419 31.358 22.4983 31.2102 23.2356C31.066 23.9554 30.8525 24.662 30.5727 25.3376C30.2994 26.0011 29.9604 26.6406 29.5642 27.2369C29.174 27.8295 28.7244 28.3855 28.2306 28.8922C27.7357 29.3968 27.1911 29.8561 26.6129 30.2575C26.0289 30.6605 25.4037 31.0073 24.7556 31.2886C24.0952 31.5737 23.4038 31.7921 22.7017 31.9395C21.981 32.0914 21.24 32.1689 20.4995 32.1689C19.7585 32.1689 19.0174 32.0914 18.2978 31.9395C17.5947 31.7921 16.9033 31.5737 16.2434 31.2886C15.5953 31.0073 14.9695 30.6605 14.3855 30.2575C13.8073 29.8561 13.2627 29.3968 12.7689 28.8922C12.2745 28.3855 11.825 27.8295 11.4342 27.2369C11.0402 26.6406 10.7006 26.0011 10.4262 25.3376C10.1464 24.662 9.93237 23.9553 9.78768 23.2356C9.64141 22.4983 9.56665 21.7419 9.56665 20.9845C9.56665 20.2265 9.64137 19.4685 9.78773 18.7328C9.93241 18.013 10.1465 17.3053 10.4263 16.6308C10.7007 15.9668 11.0402 15.3267 11.4342 14.7303C11.825 14.1373 12.2746 13.5824 12.7689 13.075C13.2628 12.5704 13.8073 12.1123 14.3855 11.7114C14.9696 11.3067 15.5953 10.96 16.2434 10.6782C16.9033 10.3925 17.5947 10.1735 18.2978 10.0272C19.0175 9.87647 19.7585 9.8 20.4995 9.8C21.24 9.8 21.981 9.87647 22.7018 10.0272C23.4038 10.1736 24.0952 10.3925 24.7556 10.6782C25.4037 10.9599 26.0289 11.3067 26.613 11.7114C27.1912 12.1123 27.7358 12.5704 28.2306 13.075C28.7245 13.5824 29.174 14.1373 29.5643 14.7303C29.9604 15.3267 30.2994 15.9668 30.5727 16.6308C30.8525 17.3053 31.066 18.013 31.2102 18.7328C31.358 19.4685 31.4333 20.2265 31.4333 20.9845ZM16.5156 12.3454C13.9119 13.6032 11.9685 16.0574 11.3626 19.0152C11.6087 19.0174 15.4996 19.0676 19.9826 17.8492C18.3666 14.9122 16.64 12.5153 16.5156 12.3454ZM20.7562 19.3199C15.9486 20.7922 11.3353 20.6863 11.1699 20.6797C11.1672 20.7824 11.1624 20.8818 11.1624 20.9845C11.1624 23.4381 12.0673 25.675 13.5547 27.3664C13.5515 27.3614 16.1067 22.7244 21.1454 21.0577C21.2671 21.0162 21.391 20.979 21.5138 20.943C21.2795 20.4002 21.0237 19.8562 20.7562 19.3199ZM26.6658 13.8161C25.0219 12.3334 22.8635 11.434 20.4995 11.434C19.7408 11.434 19.0046 11.528 18.2993 11.7016C18.4392 11.8939 20.193 14.2738 21.7898 17.273C25.3129 15.922 26.6428 13.8511 26.6658 13.8161ZM22.1503 22.5256C22.1295 22.5326 22.1087 22.5387 22.0883 22.5463C16.5793 24.5109 14.7803 28.47 14.7608 28.5132C16.3459 29.7742 18.3341 30.5349 20.4995 30.5349C21.7925 30.5349 23.0242 30.2656 24.1448 29.778C24.0065 28.9435 23.4641 26.0186 22.1503 22.5256ZM25.7171 28.9053C27.8136 27.4581 29.3026 25.1601 29.718 22.4982C29.5258 22.4349 26.9135 21.589 23.8997 22.0832C25.1244 25.526 25.622 28.3297 25.7171 28.9053ZM22.5085 18.6962C22.7252 19.1517 22.9351 19.6153 23.1289 20.0812C23.1978 20.2483 23.265 20.4122 23.3307 20.576C26.5382 20.1631 29.6983 20.8577 29.8334 20.8861C29.812 18.6219 29.0202 16.544 27.7101 14.9171C27.6925 14.9427 26.195 17.1561 22.5085 18.6962Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="contact">
+                        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21C0 9.40202 9.17816 0 20.5 0C31.8218 0 41 9.40202 41 21C41 32.598 31.8218 42 20.5 42C9.17816 42 0 32.598 0 21Z" fill="#AF19AC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.501 9.8C17.5317 9.8 17.159 9.8133 15.9928 9.86767C14.8288 9.92227 14.0343 10.111 13.3391 10.388C12.62 10.6741 12.01 11.0567 11.4023 11.6795C10.7942 12.3021 10.4206 12.9269 10.1404 13.6633C9.86937 14.3757 9.68487 15.1898 9.63248 16.3817C9.58032 17.5764 9.56665 17.9584 9.56665 21.0001C9.56665 24.0419 9.57986 24.4225 9.63271 25.6171C9.68623 26.8095 9.87051 27.6234 10.1407 28.3355C10.4201 29.0721 10.7937 29.697 11.4016 30.3195C12.0091 30.9426 12.6191 31.3262 13.3378 31.6122C14.0334 31.8892 14.8281 32.078 15.9919 32.1326C17.1581 32.1869 17.5305 32.2002 20.4996 32.2002C23.4692 32.2002 23.8407 32.1869 25.007 32.1326C26.1709 32.078 26.9663 31.8892 27.662 31.6122C28.3808 31.3262 28.9899 30.9426 29.5974 30.3195C30.2056 29.697 30.5791 29.0721 30.8593 28.3357C31.1281 27.6234 31.3126 26.8092 31.3673 25.6174C31.4197 24.4227 31.4333 24.0419 31.4333 21.0001C31.4333 17.9584 31.4197 17.5766 31.3673 16.3819C31.3126 15.1896 31.1281 14.3757 30.8593 13.6636C30.5791 12.9269 30.2056 12.3021 29.5974 11.6795C28.9892 11.0565 28.3811 10.6738 27.6613 10.388C26.9643 10.111 26.1693 9.92227 25.0054 9.86767C23.8391 9.8133 23.4678 9.8 20.4976 9.8H20.501ZM19.5201 11.8183C19.8112 11.8179 20.1361 11.8183 20.501 11.8183C23.4202 11.8183 23.7662 11.8291 24.919 11.8827C25.985 11.9327 26.5636 12.1151 26.949 12.2684C27.4592 12.4714 27.823 12.7141 28.2054 13.1061C28.5881 13.4981 28.825 13.8714 29.0236 14.3941C29.1732 14.7885 29.3516 15.3811 29.4001 16.4731C29.4525 17.6538 29.4639 18.0085 29.4639 20.9975C29.4639 23.9866 29.4525 24.3412 29.4001 25.5219C29.3514 26.6139 29.1732 27.2066 29.0236 27.6009C28.8254 28.1236 28.5881 28.4958 28.2054 28.8875C27.8227 29.2795 27.4594 29.5222 26.949 29.7252C26.564 29.8792 25.985 30.0612 24.919 30.1111C23.7664 30.1648 23.4202 30.1765 20.501 30.1765C17.5815 30.1765 17.2355 30.1648 16.0829 30.1111C15.0169 30.0607 14.4384 29.8783 14.0527 29.725C13.5425 29.522 13.1781 29.2793 12.7954 28.8873C12.4127 28.4953 12.1758 28.1229 11.9772 27.6C11.8275 27.2057 11.6492 26.613 11.6007 25.521C11.5483 24.3403 11.5378 23.9856 11.5378 20.9947C11.5378 18.0038 11.5483 17.651 11.6007 16.4703C11.6494 15.3783 11.8275 14.7857 11.9772 14.3908C12.1754 13.8682 12.4127 13.4948 12.7954 13.1028C13.1781 12.7108 13.5425 12.4682 14.0527 12.2647C14.4381 12.1107 15.0169 11.9287 16.0829 11.8785C17.0915 11.8319 17.4824 11.8179 19.5201 11.8155V11.8183ZM26.3372 13.678C25.6128 13.678 25.0251 14.2793 25.0251 15.0216C25.0251 15.7636 25.6128 16.3656 26.3372 16.3656C27.0615 16.3656 27.6492 15.7636 27.6492 15.0216C27.6492 14.2796 27.0615 13.678 26.3372 13.678ZM20.501 15.2484C17.4003 15.2484 14.8862 17.8237 14.8862 21.0001C14.8862 24.1765 17.4003 26.7506 20.501 26.7506C23.6018 26.7506 26.1149 24.1765 26.1149 21.0001C26.1149 17.8237 23.6018 15.2484 20.501 15.2484ZM20.501 17.2667C22.5137 17.2667 24.1455 18.9381 24.1455 21.0001C24.1455 23.0618 22.5137 24.7335 20.501 24.7335C18.4881 24.7335 16.8565 23.0618 16.8565 21.0001C16.8565 18.9381 18.4881 17.2667 20.501 17.2667Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="contact">
+                        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21C0 9.40202 9.17816 0 20.5 0C31.8218 0 41 9.40202 41 21C41 32.598 31.8218 42 20.5 42C9.17816 42 0 32.598 0 21Z" fill="#AF19AC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M29.043 13.7807C29.9839 14.0452 30.7249 14.8245 30.9764 15.8141C31.4333 17.6077 31.4333 21.35 31.4333 21.35C31.4333 21.35 31.4333 25.0922 30.9764 26.886C30.7249 27.8756 29.9839 28.6549 29.043 28.9195C27.3379 29.4 20.5 29.4 20.5 29.4C20.5 29.4 13.6621 29.4 11.9568 28.9195C11.0159 28.6549 10.275 27.8756 10.0235 26.886C9.56665 25.0922 9.56665 21.35 9.56665 21.35C9.56665 21.35 9.56665 17.6077 10.0235 15.8141C10.275 14.8245 11.0159 14.0452 11.9568 13.7807C13.6621 13.3 20.5 13.3 20.5 13.3C20.5 13.3 27.3379 13.3 29.043 13.7807ZM18.45 18.2V25.2L23.9167 21.7001L18.45 18.2Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-4 d-flex justify-content-end d-lg-none">
+                    <div class="menu-burger d-flex align-items-center justify-content-center">
+                        <div class="menu-burger-item d-flex justify-content-center flex-column">
+                            <div class="menu-burger-list" id="burger_list1"></div>
+                            <div class="menu-burger-list" id="burger_list2"></div>
+                            <div class="menu-burger-list" id="burger_list3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu d-block d-md-none">
+        <ul class="mobile-menu-item">
+            <li class="mobile-menu__list"><a href="#" class="mobile-menu__link">world</a></li>
+            <li class="mobile-menu__list"><a href="#" class="mobile-menu__link">verse</a></li>
+            <li class="mobile-menu__list"><a href="#" class="mobile-menu__link">cubes</a></li>
+            <li class="mobile-menu__list"><a href="#" class="mobile-menu__link">lightpaper</a></li>
+        </ul>
+
+        <div class="d-flex justify-content-between">
+            <a href="#" class="contact">
+                <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M41 21C41 9.40078 31.823 0 20.5 0C9.17695 0 0 9.40078 0 21C0 31.4836 7.49531 40.1707 17.2969 41.7457V27.0703H12.0918V21H17.2969V16.3734C17.2969 11.1111 20.3559 8.20312 25.0404 8.20312C27.2826 8.20312 29.6289 8.61328 29.6289 8.61328V13.7812H27.0424C24.4959 13.7812 23.7031 15.4014 23.7031 17.0625V21H29.3887L28.4798 27.0703H23.7031V41.7457C33.5047 40.1707 41 31.4836 41 21Z" fill="#AF19AC"/>
+                    <path d="M28.4798 27.0703L29.3887 21H23.7031V17.0625C23.7031 15.4014 24.4959 13.7812 27.0424 13.7812H29.6289V8.61328C29.6289 8.61328 27.2826 8.20312 25.0404 8.20312C20.3559 8.20312 17.2969 11.1111 17.2969 16.3734V21H12.0918V27.0703H17.2969V41.7457C18.3419 41.9139 19.4109 42 20.5 42C21.5891 42 22.6581 41.9139 23.7031 41.7457V27.0703H28.4798Z" fill="white"/>
+                </svg>
+            </a>
+            <a href="#" class="contact">
+                <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21C0 9.40202 9.17816 0 20.5 0C31.8218 0 41 9.40202 41 21C41 32.598 31.8218 42 20.5 42C9.17816 42 0 32.598 0 21Z" fill="#AF19AC"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.886 17.0691L19.929 17.7957L19.2121 17.7067C16.6023 17.3657 14.3224 16.2089 12.3866 14.2663L11.4402 13.3024L11.1964 14.0142C10.6802 15.6009 11.01 17.2767 12.0854 18.4037C12.659 19.0266 12.53 19.1155 11.5405 18.7448C11.1964 18.6262 10.8953 18.5372 10.8666 18.5817C10.7662 18.6855 11.1104 20.035 11.3828 20.5688C11.7556 21.3103 12.5156 22.037 13.3473 22.467L14.0499 22.8081L13.2182 22.8229C12.4152 22.8229 12.3866 22.8378 12.4726 23.1492C12.7594 24.1131 13.8922 25.1363 15.154 25.5812L16.0431 25.8926L15.2688 26.3672C14.1216 27.0493 12.7737 27.4349 11.4258 27.4646C10.7806 27.4794 10.25 27.5387 10.25 27.5832C10.25 27.7315 11.9994 28.562 13.0175 28.8882C16.0718 29.8521 19.6996 29.4369 22.4241 27.7908C24.3599 26.6193 26.2957 24.291 27.1991 22.037C27.6866 20.8358 28.1742 18.641 28.1742 17.5881C28.1742 16.9059 28.2172 16.817 29.0202 16.0013C29.4934 15.5268 29.9379 15.0078 30.0239 14.8595C30.1673 14.5777 30.153 14.5777 29.4217 14.8298C28.2028 15.2747 28.0308 15.2154 28.633 14.548C29.0775 14.0735 29.6081 13.2134 29.6081 12.9613C29.6081 12.9168 29.393 12.9909 29.1492 13.1244C28.8911 13.2727 28.3176 13.4951 27.8874 13.6286L27.113 13.8807L26.4104 13.3913C26.0233 13.1244 25.4784 12.8278 25.1916 12.7388C24.4603 12.5312 23.3418 12.5609 22.6822 12.7982C20.8898 13.4655 19.757 15.1857 19.886 17.0691Z" fill="white"/>
+                </svg>
+            </a>
+            <a href="#" class="contact">
+                <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21C0 9.40202 9.17816 0 20.5 0C31.8218 0 41 9.40202 41 21C41 32.598 31.8218 42 20.5 42C9.17816 42 0 32.598 0 21Z" fill="#AF19AC"/>
+                    <path d="M14.7931 12.9699C14.7629 11.5679 13.7842 10.5 12.1949 10.5C10.6057 10.5 9.56665 11.5679 9.56665 12.9699C9.56665 14.3428 10.575 15.4414 12.1346 15.4414H12.1643C13.7842 15.4414 14.7931 14.3428 14.7931 12.9699Z" fill="white"/>
+                    <path d="M14.4871 17.3932H9.84137V31.6922H14.4871V17.3932Z" fill="white"/>
+                    <path d="M25.8925 17.0574C28.9496 17.0574 31.2415 19.1015 31.2415 23.4935L31.2413 31.6921H26.5957V24.0422C26.5957 22.1207 25.9235 20.8095 24.2417 20.8095C22.9582 20.8095 22.1937 21.6934 21.8579 22.5472C21.7351 22.8531 21.705 23.2794 21.705 23.7068V31.6925H17.0586C17.0586 31.6925 17.1199 18.7353 17.0586 17.3935H21.705V19.4189C22.3216 18.4452 23.4259 17.0574 25.8925 17.0574Z" fill="white"/>
+                </svg>
+            </a>
+            <a href="#" class="contact">
+                <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21C0 9.40202 9.17816 0 20.5 0C31.8218 0 41 9.40202 41 21C41 32.598 31.8218 42 20.5 42C9.17816 42 0 32.598 0 21Z" fill="#AF19AC"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M31.4333 20.9845C31.4333 21.7419 31.358 22.4983 31.2102 23.2356C31.066 23.9554 30.8525 24.662 30.5727 25.3376C30.2994 26.0011 29.9604 26.6406 29.5642 27.2369C29.174 27.8295 28.7244 28.3855 28.2306 28.8922C27.7357 29.3968 27.1911 29.8561 26.6129 30.2575C26.0289 30.6605 25.4037 31.0073 24.7556 31.2886C24.0952 31.5737 23.4038 31.7921 22.7017 31.9395C21.981 32.0914 21.24 32.1689 20.4995 32.1689C19.7585 32.1689 19.0174 32.0914 18.2978 31.9395C17.5947 31.7921 16.9033 31.5737 16.2434 31.2886C15.5953 31.0073 14.9695 30.6605 14.3855 30.2575C13.8073 29.8561 13.2627 29.3968 12.7689 28.8922C12.2745 28.3855 11.825 27.8295 11.4342 27.2369C11.0402 26.6406 10.7006 26.0011 10.4262 25.3376C10.1464 24.662 9.93237 23.9553 9.78768 23.2356C9.64141 22.4983 9.56665 21.7419 9.56665 20.9845C9.56665 20.2265 9.64137 19.4685 9.78773 18.7328C9.93241 18.013 10.1465 17.3053 10.4263 16.6308C10.7007 15.9668 11.0402 15.3267 11.4342 14.7303C11.825 14.1373 12.2746 13.5824 12.7689 13.075C13.2628 12.5704 13.8073 12.1123 14.3855 11.7114C14.9696 11.3067 15.5953 10.96 16.2434 10.6782C16.9033 10.3925 17.5947 10.1735 18.2978 10.0272C19.0175 9.87647 19.7585 9.8 20.4995 9.8C21.24 9.8 21.981 9.87647 22.7018 10.0272C23.4038 10.1736 24.0952 10.3925 24.7556 10.6782C25.4037 10.9599 26.0289 11.3067 26.613 11.7114C27.1912 12.1123 27.7358 12.5704 28.2306 13.075C28.7245 13.5824 29.174 14.1373 29.5643 14.7303C29.9604 15.3267 30.2994 15.9668 30.5727 16.6308C30.8525 17.3053 31.066 18.013 31.2102 18.7328C31.358 19.4685 31.4333 20.2265 31.4333 20.9845ZM16.5156 12.3454C13.9119 13.6032 11.9685 16.0574 11.3626 19.0152C11.6087 19.0174 15.4996 19.0676 19.9826 17.8492C18.3666 14.9122 16.64 12.5153 16.5156 12.3454ZM20.7562 19.3199C15.9486 20.7922 11.3353 20.6863 11.1699 20.6797C11.1672 20.7824 11.1624 20.8818 11.1624 20.9845C11.1624 23.4381 12.0673 25.675 13.5547 27.3664C13.5515 27.3614 16.1067 22.7244 21.1454 21.0577C21.2671 21.0162 21.391 20.979 21.5138 20.943C21.2795 20.4002 21.0237 19.8562 20.7562 19.3199ZM26.6658 13.8161C25.0219 12.3334 22.8635 11.434 20.4995 11.434C19.7408 11.434 19.0046 11.528 18.2993 11.7016C18.4392 11.8939 20.193 14.2738 21.7898 17.273C25.3129 15.922 26.6428 13.8511 26.6658 13.8161ZM22.1503 22.5256C22.1295 22.5326 22.1087 22.5387 22.0883 22.5463C16.5793 24.5109 14.7803 28.47 14.7608 28.5132C16.3459 29.7742 18.3341 30.5349 20.4995 30.5349C21.7925 30.5349 23.0242 30.2656 24.1448 29.778C24.0065 28.9435 23.4641 26.0186 22.1503 22.5256ZM25.7171 28.9053C27.8136 27.4581 29.3026 25.1601 29.718 22.4982C29.5258 22.4349 26.9135 21.589 23.8997 22.0832C25.1244 25.526 25.622 28.3297 25.7171 28.9053ZM22.5085 18.6962C22.7252 19.1517 22.9351 19.6153 23.1289 20.0812C23.1978 20.2483 23.265 20.4122 23.3307 20.576C26.5382 20.1631 29.6983 20.8577 29.8334 20.8861C29.812 18.6219 29.0202 16.544 27.7101 14.9171C27.6925 14.9427 26.195 17.1561 22.5085 18.6962Z" fill="white"/>
+                </svg>
+            </a>
+            <a href="#" class="contact">
+                <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21C0 9.40202 9.17816 0 20.5 0C31.8218 0 41 9.40202 41 21C41 32.598 31.8218 42 20.5 42C9.17816 42 0 32.598 0 21Z" fill="#AF19AC"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.501 9.8C17.5317 9.8 17.159 9.8133 15.9928 9.86767C14.8288 9.92227 14.0343 10.111 13.3391 10.388C12.62 10.6741 12.01 11.0567 11.4023 11.6795C10.7942 12.3021 10.4206 12.9269 10.1404 13.6633C9.86937 14.3757 9.68487 15.1898 9.63248 16.3817C9.58032 17.5764 9.56665 17.9584 9.56665 21.0001C9.56665 24.0419 9.57986 24.4225 9.63271 25.6171C9.68623 26.8095 9.87051 27.6234 10.1407 28.3355C10.4201 29.0721 10.7937 29.697 11.4016 30.3195C12.0091 30.9426 12.6191 31.3262 13.3378 31.6122C14.0334 31.8892 14.8281 32.078 15.9919 32.1326C17.1581 32.1869 17.5305 32.2002 20.4996 32.2002C23.4692 32.2002 23.8407 32.1869 25.007 32.1326C26.1709 32.078 26.9663 31.8892 27.662 31.6122C28.3808 31.3262 28.9899 30.9426 29.5974 30.3195C30.2056 29.697 30.5791 29.0721 30.8593 28.3357C31.1281 27.6234 31.3126 26.8092 31.3673 25.6174C31.4197 24.4227 31.4333 24.0419 31.4333 21.0001C31.4333 17.9584 31.4197 17.5766 31.3673 16.3819C31.3126 15.1896 31.1281 14.3757 30.8593 13.6636C30.5791 12.9269 30.2056 12.3021 29.5974 11.6795C28.9892 11.0565 28.3811 10.6738 27.6613 10.388C26.9643 10.111 26.1693 9.92227 25.0054 9.86767C23.8391 9.8133 23.4678 9.8 20.4976 9.8H20.501ZM19.5201 11.8183C19.8112 11.8179 20.1361 11.8183 20.501 11.8183C23.4202 11.8183 23.7662 11.8291 24.919 11.8827C25.985 11.9327 26.5636 12.1151 26.949 12.2684C27.4592 12.4714 27.823 12.7141 28.2054 13.1061C28.5881 13.4981 28.825 13.8714 29.0236 14.3941C29.1732 14.7885 29.3516 15.3811 29.4001 16.4731C29.4525 17.6538 29.4639 18.0085 29.4639 20.9975C29.4639 23.9866 29.4525 24.3412 29.4001 25.5219C29.3514 26.6139 29.1732 27.2066 29.0236 27.6009C28.8254 28.1236 28.5881 28.4958 28.2054 28.8875C27.8227 29.2795 27.4594 29.5222 26.949 29.7252C26.564 29.8792 25.985 30.0612 24.919 30.1111C23.7664 30.1648 23.4202 30.1765 20.501 30.1765C17.5815 30.1765 17.2355 30.1648 16.0829 30.1111C15.0169 30.0607 14.4384 29.8783 14.0527 29.725C13.5425 29.522 13.1781 29.2793 12.7954 28.8873C12.4127 28.4953 12.1758 28.1229 11.9772 27.6C11.8275 27.2057 11.6492 26.613 11.6007 25.521C11.5483 24.3403 11.5378 23.9856 11.5378 20.9947C11.5378 18.0038 11.5483 17.651 11.6007 16.4703C11.6494 15.3783 11.8275 14.7857 11.9772 14.3908C12.1754 13.8682 12.4127 13.4948 12.7954 13.1028C13.1781 12.7108 13.5425 12.4682 14.0527 12.2647C14.4381 12.1107 15.0169 11.9287 16.0829 11.8785C17.0915 11.8319 17.4824 11.8179 19.5201 11.8155V11.8183ZM26.3372 13.678C25.6128 13.678 25.0251 14.2793 25.0251 15.0216C25.0251 15.7636 25.6128 16.3656 26.3372 16.3656C27.0615 16.3656 27.6492 15.7636 27.6492 15.0216C27.6492 14.2796 27.0615 13.678 26.3372 13.678ZM20.501 15.2484C17.4003 15.2484 14.8862 17.8237 14.8862 21.0001C14.8862 24.1765 17.4003 26.7506 20.501 26.7506C23.6018 26.7506 26.1149 24.1765 26.1149 21.0001C26.1149 17.8237 23.6018 15.2484 20.501 15.2484ZM20.501 17.2667C22.5137 17.2667 24.1455 18.9381 24.1455 21.0001C24.1455 23.0618 22.5137 24.7335 20.501 24.7335C18.4881 24.7335 16.8565 23.0618 16.8565 21.0001C16.8565 18.9381 18.4881 17.2667 20.501 17.2667Z" fill="white"/>
+                </svg>
+            </a>
+            <a href="#" class="contact">
+                <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21C0 9.40202 9.17816 0 20.5 0C31.8218 0 41 9.40202 41 21C41 32.598 31.8218 42 20.5 42C9.17816 42 0 32.598 0 21Z" fill="#AF19AC"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.043 13.7807C29.9839 14.0452 30.7249 14.8245 30.9764 15.8141C31.4333 17.6077 31.4333 21.35 31.4333 21.35C31.4333 21.35 31.4333 25.0922 30.9764 26.886C30.7249 27.8756 29.9839 28.6549 29.043 28.9195C27.3379 29.4 20.5 29.4 20.5 29.4C20.5 29.4 13.6621 29.4 11.9568 28.9195C11.0159 28.6549 10.275 27.8756 10.0235 26.886C9.56665 25.0922 9.56665 21.35 9.56665 21.35C9.56665 21.35 9.56665 17.6077 10.0235 15.8141C10.275 14.8245 11.0159 14.0452 11.9568 13.7807C13.6621 13.3 20.5 13.3 20.5 13.3C20.5 13.3 27.3379 13.3 29.043 13.7807ZM18.45 18.2V25.2L23.9167 21.7001L18.45 18.2Z" fill="white"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- End header & mobile menu -->
+
+    <div class="wrapper">
+        <img loading="lazy" src="assets/gif/Ужатый.gif" alt="Ужатый.gif" class="wrapper__gif" data-src="assets/gif/Ужатый.gif">
+    </div>
+    <!-- End wrapper -->
+
+    <div class="platform position-relative">
+        <img loading="lazy" src="assets/images/png/radial1.png" alt="radial" class="radial position-absolute">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-lg-6 col-md-8 platform-text wow bounceInUp">
+                    <p class="title__text">A Decentralized Platform</p>
+                    <p class="subTitle__text">BUILT & BACKED BY</p>
+                    <img loading="lazy" src="assets/images/png/polygon.png" alt="polygon" class="polygon__img">
+                    <p class="info__text">Soci will provide an unprecedented AR, VR and AI experience for the crypto community, bringing users together all in one immersive and engaging environment. </p>
+                </div>
+                <div class="col-lg-6 col-md-8 mt-5">
+                    <img loading="lazy" src="assets/gif/vr.gif" alt="" class="platform__img w-100 wow bounceInRight">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-purple">
+            <div class="carousel-purple-item">play</div>
+            <div class="carousel-purple-item">earn</div>
+            <div class="carousel-purple-item">learn</div>
+            <div class="carousel-purple-item">create</div>
+            <div class="carousel-purple-item">explore</div>
+            <div class="carousel-purple-item">play</div>
+            <div class="carousel-purple-item">earn</div>
+            <div class="carousel-purple-item">learn</div>
+            <div class="carousel-purple-item">create</div>
+            <div class="carousel-purple-item">explore</div>
+        </div>
+        <div class="carousel-blue">
+            <div class="carousel-purple-item">play</div>
+            <div class="carousel-purple-item">earn</div>
+            <div class="carousel-purple-item">learn</div>
+            <div class="carousel-purple-item">create</div>
+            <div class="carousel-purple-item">explore</div>
+            <div class="carousel-purple-item">play</div>
+            <div class="carousel-purple-item">earn</div>
+            <div class="carousel-purple-item">learn</div>
+            <div class="carousel-purple-item">create</div>
+            <div class="carousel-purple-item">explore</div>
+        </div>
+    </div>
+    <!-- End platform-->
+
+    <main class="main position-relative">
+        <div class="introducing">
+            <img loading="lazy" src="assets/images/png/radial2.png" alt="radial" class="radial position-absolute top-0">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-9 col-md-10 col-12 text-center">
+                        <div class="introducing-text wow bounceInUp">
+                            <p class="title__text">Introducing Soci</p>
+                            <p class="subTitle__text text-capitalize">social AR & virtual platform</p>
+                            <p class="info__text">Embrace a multi-layered interactive, social AR and virtual platform that allows you to experience exciting adventures where the only limit is your imagination.</p>
+                            <p class="info__text my-3">Where imagination becomes a journey and dreams become a reality, users can experience their NFTs on Web3; in AR, in VR, or in the Metaverse.</p>
+                            <p class="info__text">Explore how Soci can brighten your NFT experience and join the revolution today!</p>
+                        </div>
+                        <img loading="lazy" src="assets/images/png/comp.png" alt="introducing" class="introducing__img w-100 wow bounceInUp" data-wow-duration="1s">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End introducing -->
+
+        <div class="reality">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 position-relative d-flex flex-column flex-sm-row align-items-end justify-content-between">
+                        <p class="title__text position-absolute">SOCI WILL CHANGE YOUR REALITY</p>
+                        <p class="subTitle__text text-center d-sm-none w-100">The Socialite NFT</p>
+                        <div class="reality-start pe-0 pe-sm-3 wow bounceInLeft">
+                            <p class="info__text">Massive opportunities for NFT artists and projects were launched globally in 2021.</p>
+                            <p class="info__text">In 2021 alone, NFT sales reached a scale of up to $25 billion!</p>
+                            <p class="info__text">Speculative crypto assets have exploded in popularity, even though there were signs of a slowed growth towards the end of the year.</p>
+                            <p class="info__text fw-bold">So, what is next?</p>
+                        </div>
+                        <div class="reality-middle wow bounceInUp">
+                            <img loading="lazy" src="assets/gif/reality.gif" alt="reality" class="reality-middle__img">
+                        </div>
+                        <div class="reality-end ps-0 ps-sm-3 mt-4 mt-sm-0 wow bounceInRight">
+                            <p class="subTitle__text text-center d-none d-sm-block w-100">The Socialite <br> NFT</p>
+                            <p class="info__text">Socialite NFTs will grant you an exclusive access to benefits that are incomparable.</p>
+                            <p class="info__text mb-4 mb-sm-0"> OG Holders of Socialite NFTs get extraordinary perks too!</p>
+                            <img loading="lazy" src="assets/images/png/reality1.png" alt="reality" class="reality-end__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End reality -->
+
+        <div class="our-NFTs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="title__text text-uppercase text-center">our NFTs</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="our-NFTs-carousel">
+                            <div class="our-NFTs-item">
+                                <img loading="lazy" src="assets/images/png/our5.jpg" alt="our-NFTs" class="our-NFTs-item__img">
+                            </div>
+                            <div class="our-NFTs-item">
+                                <img loading="lazy" src="assets/images/png/our2.jpg" alt="our-NFTs" class="our-NFTs-item__img">
+                            </div>
+                            <div class="our-NFTs-item">
+                                <img loading="lazy" src="assets/images/png/our3.png" alt="our-NFTs" class="our-NFTs-item__img">
+                            </div>
+                            <div class="our-NFTs-item">
+                                <img loading="lazy" src="assets/images/png/our4.png" alt="our-NFTs" class="our-NFTs-item__img">
+                            </div>
+                            <div class="our-NFTs-item">
+                                <img loading="lazy" src="assets/images/png/our1.jpg" alt="our-NFTs" class="our-NFTs-item__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End our-NFTs -->
+
+        <div class="marketplace">
+            <div class="container d-xl-none">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="title__text">SociWorld <br> AR Marketplace</p>
+                    </div>
+                </div>
+            </div>
+
+            <img loading="lazy" src="assets/images/png/marketplace.png" alt="marketplace" class="marketplace__img  wow bounceInRight">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-12  wow bounceInLeft">
+                        <p class="title__text d-none d-xl-flex">SociWorld <br> AR Marketplace</p>
+                        <div class="marketplace-item">
+                            <p class="info__text">An Augmented Reality (AR) Marketplace with a virtual showroom to showcase your NFTs in the real world.</p>
+                            <p class="info__text fw-bold">Why Soci?</p>
+                            <p class="info__text">An all-in-one NFT platform for creators.</p>
+                            <p class="info__text">Earn reward Tokens when you mint and trade your NFTs.</p>
+                            <p class="info__text">Capture and share special moments of your collectible NFTs to earn rewards.</p>
+                            <p class="info__text"><span class="fw-bold">B2B: </span>Creators may mint and list NFTs to earn rewards</p>
+                        </div>
+                        <div class="mouse mt-4 d-inline-block d-none d-xl-block">
+                            <svg width="59" height="60" viewBox="0 0 59 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.5 55.9913C25.1534 55.9913 20.9848 54.2646 17.9113 51.1911C14.8378 48.1176 13.1111 43.949 13.1111 39.6024V19.9358C13.1111 15.5892 14.8378 11.4206 17.9113 8.34707C20.9848 5.27356 25.1534 3.54688 29.5 3.54688C33.8466 3.54688 38.0152 5.27356 41.0887 8.34707C44.1622 11.4206 45.8889 15.5892 45.8889 19.9358V39.6024C45.8889 41.7547 45.465 43.8858 44.6414 45.8742C43.8177 47.8626 42.6105 49.6693 41.0887 51.1911C39.5669 52.713 37.7602 53.9202 35.7718 54.7438C33.7834 55.5674 31.6522 55.9913 29.5 55.9913ZM29.5 6.82465C26.0227 6.82465 22.6879 8.206 20.229 10.6648C17.7702 13.1236 16.3889 16.4585 16.3889 19.9358V39.6024C16.3889 43.0797 17.7702 46.4146 20.229 48.8734C22.6879 51.3322 26.0227 52.7135 29.5 52.7135C32.9773 52.7135 36.3122 51.3322 38.771 48.8734C41.2298 46.4146 42.6111 43.0797 42.6111 39.6024V19.9358C42.6111 16.4585 41.2298 13.1236 38.771 10.6648C36.3122 8.206 32.9773 6.82465 29.5 6.82465Z" fill="white"/>
+                                <path d="M29.5 24.8524C29.0653 24.8524 28.6485 24.6797 28.3411 24.3724C28.0338 24.065 27.8611 23.6481 27.8611 23.2135V16.6579C27.8611 16.2233 28.0338 15.8064 28.3411 15.4991C28.6485 15.1917 29.0653 15.019 29.5 15.019C29.9347 15.019 30.3515 15.1917 30.6589 15.4991C30.9662 15.8064 31.1389 16.2233 31.1389 16.6579V23.2135C31.1389 23.6481 30.9662 24.065 30.6589 24.3724C30.3515 24.6797 29.9347 24.8524 29.5 24.8524Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End marketplace -->
+
+        <div class="mobile-game">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-5 position-relative d-none d-sm-block  wow bounceInUp">
+                        <img loading="lazy" src="assets/images/png/phone.png" alt="mobile-game" class="mobile-game__img">
+                    </div>
+                    <div class="col-md-8 col-sm-7 col-12 wow bounceInRight">
+                        <p class="title__text">SociCube AR <br> Mobile Game</p>
+                        <p class="mobile-game__text">Augmented Reality (AR) Cube Game</p>
+                        <p class="info__text">Explore and catch NFTs in the real world with Augmented Reality!</p>
+                        <p class="info__text">SociCube provides a 3D rendered landscape game world with a geolocation function based on Google Maps.</p>
+                        <p class="info__text">Why Soci?</p>
+                        <p class="info__text">Play, share, and explore to find rare rewards via AR.</p>
+                        <p class="info__text">B2B: Creators may add PFP as in-game rewards.</p>
+                    </div>
+                    <img loading="lazy" src="assets/images/png/phone.png" alt="mobile-game" class="mobile-game__img d-sm-none d-block">
+                </div>
+            </div>
+        </div>
+        <!-- End mobile-game -->
+
+        <div class="metaverse">
+            <div class="container d-xl-none">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="title__text">SociVerse AR/VR and AI Metaverse</p>
+                    </div>
+                </div>
+            </div>
+            <img loading="lazy" src="assets/images/png/car.png" alt="metaverse" class="metaverse__img wow bounceInLeft">
+            <img loading="lazy" src="assets/images/png/radial3.png" alt="radial" class="metaverse__radial d-none d-xl-block">
+            <div class="container">
+                <div class="row d-flex justify-content-end">
+                    <div class="col-xl-7 wow bounceInRight">
+                        <p class="title__text d-none d-xl-flex">SociVerse AR/VR and AI Metaverse</p>
+                        <div class="metaverse-item">
+                            <p class="info__text">SociVerse is a futuristic vision of a decentralized Metaverse created for game enthusiasts to own, play, and earn in any part of the Metaverse Gaming World.</p>
+                            <p class="info__text">Have you ever desired to own a race track, a sports stadium, or a beach resort? Now your desires can be made virtual reality with SociVerse.</p>
+                            <p class="info__text">SociVerse is an entertainment ecosystem; a combined mix of Augmented Reality (AR), Virtual Reality (VR) technologies, as well as the possibilities of Artificial Intelligence (AI) and machine learning.</p>
+                            <p class="info__text">Players will have the opportunity to make their dreams a reality.</p>
+                            <p class="info__text">Be a part of the SociVerse and embrace your passion, gain experience, and earn; all at once!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End metaverse -->
+
+        <div class="opportunitie">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="title__text text-center">Earning opportunities</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-8 col-12 wow bounceInLeft">
+                        <div class="opportunitie-item">
+                            <p class="opportunitie-item__title">THE NATIVE TOKEN OF SociWorld</p>
+                            <div class="opportunitie-item-info">
+                                <p class="info__text">Bloktopians will be able to buy and sell SOCI via both Decentalized and Centralised exchanges. All SOCI from initial real estate purchases will be publicity burnt decreasing the overall supply of the token.</p>
+                                <p class="info__text">SOCI will also be required to purchase items from within SociWorld for example; upgrading real estate space or purchasing items from within the marketplace. This is what makes SOCI valuable and necessary for the ecosystem
+                                    to operate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8 col-12 wow bounceInUp">
+                        <div class="opportunitie-item">
+                            <p class="opportunitie-item__title">BUY, SELL & LEASE VIRTUAL REAL ESTATE</p>
+                            <div class="opportunitie-item-info">
+                                <p class="info__text">SociWorlds will be able to purchase real estate following the SOCI token distribution event (TGE). </p>
+                                <p class="info__text">The real estate will be a valuable commodity within SociWorld allowing SociWorlds to speculate on the property and either resell for profit or lease for passive income opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8 col-12 wow bounceInRight">
+                        <div class="opportunitie-item">
+                            <p class="opportunitie-item__title">RECEIVE INCOME VIA ADVERTISING</p>
+                            <div class="opportunitie-item-info">
+                                <p class="info__text">Within SociWorld one of the key earning opportunities to investors is via advertising.</p>
+                                <p class="info__text">SociWorld will work with key brand partners and give them a unique opportunity to advertise within SociWorld.</p>
+                                <p class="info__text">A proportion of these advertising fees generated will be returned to SociWorld token holders.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End opportunitie-->
+
+        <div class="token-utility">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="title__text text-uppercase text-center">token utility</p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col-lg-6 col-md-8 wow bounceInLeft">
+                        <img loading="lazy" src="assets/gif/3d.gif" alt="token-utility" class="token-utility__img">
+                    </div>
+                    <div class="col-lg-6 col-md-8 wow bounceInRight">
+                        <div class="token-utility-item d-flex align-items-center">
+                            <div class="token-utility-item-circle">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_177_75)">
+                                    <path d="M18 10.2695H24L21 6.26953L18 10.2695ZM18 14.2695H24L21 18.2695L18 14.2695Z" fill="url(#paint0_radial_177_75)"/>
+                                    <path d="M1 0.269531H7V24.2695H1C0.734784 24.2695 0.480429 24.1642 0.292892 23.9766C0.105356 23.7891 0 23.5347 0 23.2695V1.26953C0 1.00431 0.105356 0.74996 0.292892 0.562424C0.480429 0.374887 0.734784 0.269531 1 0.269531Z" fill="url(#paint1_radial_177_75)"/>
+                                    <path d="M9 0.269531H15C15.2652 0.269531 15.5196 0.374887 15.7071 0.562424C15.8946 0.74996 16 1.00431 16 1.26953V23.2695C16 23.5347 15.8946 23.7891 15.7071 23.9766C15.5196 24.1642 15.2652 24.2695 15 24.2695H9V0.269531Z" fill="url(#paint2_radial_177_75)"/>
+                                    </g>
+                                    <defs>
+                                    <radialGradient id="paint0_radial_177_75" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18.2496 -4.01282) scale(6.51506 106.847)">
+                                    <stop stop-color="#9500FF"/>
+                                    <stop offset="0.17" stop-color="#fff"/>
+                                    <stop offset="0.55" stop-color="#fff"/>
+                                    <stop offset="0.66" stop-color="#fff"/>
+                                    <stop offset="0.78" stop-color="#fff"/>
+                                    <stop offset="0.91" stop-color="#fff"/>
+                                    <stop offset="1" stop-color="#fff"/>
+                                    </radialGradient>
+                                    <radialGradient id="paint1_radial_177_75" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.291248 -20.2952) scale(7.60091 213.694)">
+                                    <stop stop-color="#9500FF"/>
+                                    <stop offset="0.17" stop-color="#fff"/>
+                                    <stop offset="0.55" stop-color="#fff"/>
+                                    <stop offset="0.66" stop-color="#fff"/>
+                                    <stop offset="0.78" stop-color="#fff"/>
+                                    <stop offset="0.91" stop-color="#fff"/>
+                                    <stop offset="1" stop-color="#fff"/>
+                                    </radialGradient>
+                                    <radialGradient id="paint2_radial_177_75" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(9.29125 -20.2952) scale(7.60091 213.694)">
+                                    <stop stop-color="#9500FF"/>
+                                    <stop offset="0.17" stop-color="#fff"/>
+                                    <stop offset="0.55" stop-color="#fff"/>
+                                    <stop offset="0.66" stop-color="#fff"/>
+                                    <stop offset="0.78" stop-color="#fff"/>
+                                    <stop offset="0.91" stop-color="#fff"/>
+                                    <stop offset="1" stop-color="#fff"/>
+                                    </radialGradient>
+                                    <clipPath id="clip0_177_75">
+                                    <rect width="24" height="24" fill="white" transform="translate(0 0.269531)"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                            </div>
+                            <p class="info__text">SOCI is the native token of SociWorld. SOCI will be required to purchase or lease all real estate within SociWorld.</p>
+                        </div>
+                        <div class="token-utility-item d-flex align-items-center">
+                            <div class="token-utility-item-circle">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23 6.26953V2.26953C23 2.00431 22.8946 1.74996 22.7071 1.56242C22.5196 1.37489 22.2652 1.26953 22 1.26953H2C1.73478 1.26953 1.48043 1.37489 1.29289 1.56242C1.10536 1.74996 1 2.00431 1 2.26953V6.26953H23Z" fill="white"/>
+                                    <path d="M1 8.26953V22.2695C1 22.5347 1.10536 22.7891 1.29289 22.9766C1.48043 23.1642 1.73478 23.2695 2 23.2695H7V8.26953H1Z" fill="white"/>
+                                    <path d="M9 23.2695H22C22.2652 23.2695 22.5196 23.1642 22.7071 22.9766C22.8946 22.7891 23 22.5347 23 22.2695V8.26953H9V23.2695Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <p class="info__text">SociWorlds will be able to purchase items from the SociWorld marketplace, via a NFT mechansim. </p>
+                        </div>
+                        <div class="token-utility-item d-flex align-items-center">
+                            <div class="token-utility-item-circle">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 1.26953H2C1.73478 1.26953 1.48043 1.37489 1.29289 1.56242C1.10536 1.74996 1 2.00431 1 2.26953V22.2695C1 22.5347 1.10536 22.7891 1.29289 22.9766C1.48043 23.1642 1.73478 23.2695 2 23.2695H5V1.26953Z" fill="white"/>
+                                    <path d="M7 23.2695H17V1.26953H7V23.2695ZM12 19.2695C11.7348 19.2695 11.4804 19.1642 11.2929 18.9766C11.1054 18.7891 11 18.5347 11 18.2695C11 18.0043 11.1054 17.75 11.2929 17.5624C11.4804 17.3749 11.7348 17.2695 12 17.2695C12.2652 17.2695 12.5196 17.3749 12.7071 17.5624C12.8946 17.75 13 18.0043 13 18.2695C13 18.5347 12.8946 18.7891 12.7071 18.9766C12.5196 19.1642 12.2652 19.2695 12 19.2695ZM12 5.26953C12.2652 5.26953 12.5196 5.37489 12.7071 5.56242C12.8946 5.74996 13 6.00431 13 6.26953C13 6.53475 12.8946 6.7891 12.7071 6.97664C12.5196 7.16418 12.2652 7.26953 12 7.26953C11.7348 7.26953 11.4804 7.16418 11.2929 6.97664C11.1054 6.7891 11 6.53475 11 6.26953C11 6.00431 11.1054 5.74996 11.2929 5.56242C11.4804 5.37489 11.7348 5.26953 12 5.26953ZM12 11.2695C12.2652 11.2695 12.5196 11.3749 12.7071 11.5624C12.8946 11.75 13 12.0043 13 12.2695C13 12.5347 12.8946 12.7891 12.7071 12.9766C12.5196 13.1642 12.2652 13.2695 12 13.2695C11.7348 13.2695 11.4804 13.1642 11.2929 12.9766C11.1054 12.7891 11 12.5347 11 12.2695C11 12.0043 11.1054 11.75 11.2929 11.5624C11.4804 11.3749 11.7348 11.2695 12 11.2695Z" fill="white"/>
+                                    <path d="M22 1.26953H19V23.2695H22C22.2652 23.2695 22.5196 23.1642 22.7071 22.9766C22.8946 22.7891 23 22.5347 23 22.2695V2.26953C23 2.00431 22.8946 1.74996 22.7071 1.56242C22.5196 1.37489 22.2652 1.26953 22 1.26953Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <p class="info__text">SOCI is a utility token and offers holders a wide range of features within SociWorld. </p>
+                        </div>
+                        <div class="token-utility-item d-flex align-items-center">
+                            <div class="token-utility-item-circle">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23 5.26953L23 2.26953C23 2.00431 22.8946 1.74996 22.7071 1.56242C22.5196 1.37489 22.2652 1.26953 22 1.26953L2 1.26953C1.73478 1.26953 1.48043 1.37489 1.29289 1.56242C1.10536 1.74996 1 2.00431 1 2.26953L1 5.26953L23 5.26953Z" fill="white"/>
+                                    <path d="M1 7.26953L1 17.2695L23 17.2695L23 7.26953L1 7.26953ZM5 12.2695C5 12.0043 5.10536 11.75 5.29289 11.5624C5.48043 11.3749 5.73478 11.2695 6 11.2695C6.26522 11.2695 6.51957 11.3749 6.70711 11.5624C6.89464 11.75 7 12.0043 7 12.2695C7 12.5347 6.89464 12.7891 6.70711 12.9766C6.51957 13.1642 6.26522 13.2695 6 13.2695C5.73478 13.2695 5.48043 13.1642 5.29289 12.9766C5.10536 12.7891 5 12.5347 5 12.2695ZM19 12.2695C19 12.5347 18.8946 12.7891 18.7071 12.9766C18.5196 13.1642 18.2652 13.2695 18 13.2695C17.7348 13.2695 17.4804 13.1642 17.2929 12.9766C17.1054 12.7891 17 12.5347 17 12.2695C17 12.0043 17.1054 11.75 17.2929 11.5624C17.4804 11.3749 17.7348 11.2695 18 11.2695C18.2652 11.2695 18.5196 11.3749 18.7071 11.5624C18.8946 11.75 19 12.0043 19 12.2695ZM13 12.2695C13 12.5347 12.8946 12.7891 12.7071 12.9766C12.5196 13.1642 12.2652 13.2695 12 13.2695C11.7348 13.2695 11.4804 13.1642 11.2929 12.9766C11.1054 12.7891 11 12.5347 11 12.2695C11 12.0043 11.1054 11.75 11.2929 11.5624C11.4804 11.3749 11.7348 11.2695 12 11.2695C12.2652 11.2695 12.5196 11.3749 12.7071 11.5624C12.8946 11.75 13 12.0043 13 12.2695Z" fill="white"/>
+                                    <path d="M23 22.2695L23 19.2695L1 19.2695L1 22.2695C1 22.5347 1.10536 22.7891 1.29289 22.9766C1.48043 23.1642 1.73478 23.2695 2 23.2695L22 23.2695C22.2652 23.2695 22.5196 23.1642 22.7071 22.9766C22.8946 22.7891 23 22.5347 23 22.2695Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <p class="info__text">SociWorld will work on a Governance model. NFT holders will form part of that Governance council. Each NFT will vote via a DAO.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End token-utility -->
+
+        <div class="partners">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="title__text text-uppercase text-center">partners</p>
+                    </div>
+                </div>
+            </div>
+            <div class="partners-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                <img loading="lazy" src="assets/images/png/brend1.png" alt="partners" class="partners__img">
+                                <img loading="lazy" src="assets/images/png/brend2.png" alt="partners" class="partners__img">
+                                <img loading="lazy" src="assets/images/png/brend5.png" alt="partners" class="partners__img zokyo">
+                                <img loading="lazy" src="assets/images/png/brend1.png" alt="partners" class="partners__img">
+                                <img loading="lazy" src="assets/images/png/brend5.png" alt="partners" class="partners__img zokyo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End partners -->
+
+        <div class="investors position-relative">
+            <img loading="lazy" src="assets/images/png/radial4.png" alt="radial" class="radial position-absolute end-0 d-none d-xl-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="title__text text-uppercase text-center">investors</p>
+                    </div>
+                </div>
+            </div>
+            <div class="investors-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-center flex-wrap">
+                                <img loading="lazy" src="assets/images/png/brend1.png" alt="partners" class="partners__img">
+                                <img loading="lazy" src="assets/images/png/brend2.png" alt="partners" class="partners__img">
+                                <img loading="lazy" src="assets/images/png/brend5.png" alt="partners" class="partners__img zokyo">
+                                <img loading="lazy" src="assets/images/png/brend1.png" alt="partners" class="partners__img">
+                                <img loading="lazy" src="assets/images/png/brend5.png" alt="partners" class="partners__img zokyo">
+                                <img loading="lazy" src="assets/images/png/brend1.png" alt="partners" class="partners__img">
+                                <img loading="lazy" src="assets/images/png/brend2.png" alt="partners" class="partners__img">
+                                <img loading="lazy" src="assets/images/png/brend5.png" alt="partners" class="partners__img zokyo">
+                                <img loading="lazy" src="assets/images/png/brend1.png" alt="partners" class="partners__img">
+                                <img loading="lazy" src="assets/images/png/brend5.png" alt="partners" class="partners__img zokyo">
+                                <img loading="lazy" src="assets/images/png/brend1.png" alt="partners" class="partners__img">
+                                <img loading="lazy" src="assets/images/png/brend2.png" alt="partners" class="partners__img">
+                                <img loading="lazy" src="assets/images/png/brend5.png" alt="partners" class="partners__img zokyo">
+                                <img loading="lazy" src="assets/images/png/brend1.png" alt="partners" class="partners__img">
+                                <img loading="lazy" src="assets/images/png/brend5.png" alt="partners" class="partners__img zokyo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End partners -->
+
+        <div class="team">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="title__text text-uppercase text-center">team</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 wow bounceInLeft">
+                        <div class="team-item">
+                            <div>
+                                <div class="team-item-card">
+                                    <p class="team-item-card__name">CEO & COFOUNDER</p>
+                                    <img loading="lazy" src="assets/images/png/team1.png" alt="team-img" class="team-item-card__img">
+                                </div>
+                            </div>
+                            <div class="team-item-info">
+                                <p class="team-item-info__title">John smith</p>
+                                <p class="team-item-info__subTitle">CEO & COFOUNDER</p>
+                                <p class="info__text">SociVerse is an entertainment ecosystem; a combined mix of Augmented Reality (AR), as well as the possibilities of Artificial Intelligence (AI) and machine learning.</p>
+                                <p class="info__text">Players will have the opportunity to make their dreams a reality.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 wow bounceInRight">
+                        <div class="team-item">
+                            <div>
+                                <div class="team-item-card">
+                                    <p class="team-item-card__name">CEO & COFOUNDER</p>
+                                    <img loading="lazy" src="assets/images/png/team2.png" alt="team-img" class="team-item-card__img">
+                                </div>
+                            </div>
+                            <div class="team-item-info">
+                                <p class="team-item-info__title">John smith</p>
+                                <p class="team-item-info__subTitle">CEO & COFOUNDER</p>
+                                <p class="info__text">SociVerse is an entertainment ecosystem; a combined mix of Augmented Reality (AR), as well as the possibilities of Artificial Intelligence (AI) and machine learning.</p>
+                                <p class="info__text">Players will have the opportunity to make their dreams a reality.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 wow bounceInLeft">
+                        <div class="team-item">
+                            <div>
+                                <div class="team-item-card">
+                                    <p class="team-item-card__name">CEO & COFOUNDER</p>
+                                    <img loading="lazy" src="assets/images/png/team3.png" alt="team-img" class="team-item-card__img">
+                                </div>
+                            </div>
+                            <div class="team-item-info">
+                                <p class="team-item-info__title">John smith</p>
+                                <p class="team-item-info__subTitle">CEO & COFOUNDER</p>
+                                <p class="info__text">SociVerse is an entertainment ecosystem; a combined mix of Augmented Reality (AR), as well as the possibilities of Artificial Intelligence (AI) and machine learning.</p>
+                                <p class="info__text">Players will have the opportunity to make their dreams a reality.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 wow bounceInRight">
+                        <div class="team-item">
+                            <div>
+                                <div class="team-item-card">
+                                    <p class="team-item-card__name">CEO & COFOUNDER</p>
+                                    <img loading="lazy" src="assets/images/png/team4.png" alt="team-img" class="team-item-card__img">
+                                </div>
+                            </div>
+                            <div class="team-item-info">
+                                <p class="team-item-info__title">John smith</p>
+                                <p class="team-item-info__subTitle">CEO & COFOUNDER</p>
+                                <p class="info__text">SociVerse is an entertainment ecosystem; a combined mix of Augmented Reality (AR), as well as the possibilities of Artificial Intelligence (AI) and machine learning.</p>
+                                <p class="info__text">Players will have the opportunity to make their dreams a reality.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End team -->
+
+        <div class="roadmap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="title__text text-uppercase text-center">roadmap</p>
+                    </div>
+                </div>
+            </div>
+            <div class="roadmap-item position-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-12 d-flex justify-content-center">
+                            <div class="roadmap-list roadmap-list_q1">
+                                <ul>
+                                    <li>Augmented Reality Mobile App Beta</li>
+                                    <li>Augmented Reality Mobile App Beta</li>
+                                    <li>Augmented Reality Mobile App Beta</li>
+                                    <li>Augmented Reality Mobile App Beta</li>
+                                    <li>Augmented Reality Mobile App Beta</li>
+                                    <li>Augmented Reality Mobile App Beta</li>
+                                    <li>Augmented Reality Mobile App Beta</li>
+                                </ul>
+                                <div class="roadmap-list-circle">Q1</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-12 d-flex justify-content-center">
+                            <div class="roadmap-list roadmap-list_q2">
+                                <ul>
+                                    <li>Augmented Reality Mobile App Beta</li>
+                                    <li>Augmented Reality Mobile App Beta</li>
+                                </ul>
+                                <div class="roadmap-list-circle">Q2</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-12 d-flex justify-content-center">
+                            <div class="roadmap-list roadmap-list_q3">
+                                <ul>
+                                    <li>Augmented Reality Mobile App Beta</li>
+                                    <li>Augmented Reality Mobile App Beta</li>
+                                    <li>Augmented Reality Mobile App Beta</li>
+                                    <li>Augmented Reality Mobile App Beta</li>
+                                </ul>
+                                <div class="roadmap-list-circle">Q3</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-12 d-flex justify-content-center">
+                            <div class="roadmap-list roadmap-list_q4">
+                                <ul>
+                                    <li>Augmented Reality Mobile App Beta</li>
+                                    <li>Augmented Reality Mobile App Beta</li>
+                                </ul>
+                                <div class="roadmap-list-circle">Q4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img loading="lazy" src="assets/images/png/roadmap.png" alt="" class="roadmap_mobile d-lg-none">
+            </div>
+        </div>
+        <!-- End roadmap -->
+    </main>
+    <!-- End main -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center justify-content-md-between">
+                <div class="col-lg-4 col-md-6 col-sm-8 d-flex align-items-center justify-content-between">
+                    <a href="#" class="contact">
+                        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M41 21C41 9.40078 31.823 0 20.5 0C9.17695 0 0 9.40078 0 21C0 31.4836 7.49531 40.1707 17.2969 41.7457V27.0703H12.0918V21H17.2969V16.3734C17.2969 11.1111 20.3559 8.20312 25.0404 8.20312C27.2826 8.20312 29.6289 8.61328 29.6289 8.61328V13.7812H27.0424C24.4959 13.7812 23.7031 15.4014 23.7031 17.0625V21H29.3887L28.4798 27.0703H23.7031V41.7457C33.5047 40.1707 41 31.4836 41 21Z" fill="#AF19AC"/>
+                            <path d="M28.4798 27.0703L29.3887 21H23.7031V17.0625C23.7031 15.4014 24.4959 13.7812 27.0424 13.7812H29.6289V8.61328C29.6289 8.61328 27.2826 8.20312 25.0404 8.20312C20.3559 8.20312 17.2969 11.1111 17.2969 16.3734V21H12.0918V27.0703H17.2969V41.7457C18.3419 41.9139 19.4109 42 20.5 42C21.5891 42 22.6581 41.9139 23.7031 41.7457V27.0703H28.4798Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="contact">
+                        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21C0 9.40202 9.17816 0 20.5 0C31.8218 0 41 9.40202 41 21C41 32.598 31.8218 42 20.5 42C9.17816 42 0 32.598 0 21Z" fill="#AF19AC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.886 17.0691L19.929 17.7957L19.2121 17.7067C16.6023 17.3657 14.3224 16.2089 12.3866 14.2663L11.4402 13.3024L11.1964 14.0142C10.6802 15.6009 11.01 17.2767 12.0854 18.4037C12.659 19.0266 12.53 19.1155 11.5405 18.7448C11.1964 18.6262 10.8953 18.5372 10.8666 18.5817C10.7662 18.6855 11.1104 20.035 11.3828 20.5688C11.7556 21.3103 12.5156 22.037 13.3473 22.467L14.0499 22.8081L13.2182 22.8229C12.4152 22.8229 12.3866 22.8378 12.4726 23.1492C12.7594 24.1131 13.8922 25.1363 15.154 25.5812L16.0431 25.8926L15.2688 26.3672C14.1216 27.0493 12.7737 27.4349 11.4258 27.4646C10.7806 27.4794 10.25 27.5387 10.25 27.5832C10.25 27.7315 11.9994 28.562 13.0175 28.8882C16.0718 29.8521 19.6996 29.4369 22.4241 27.7908C24.3599 26.6193 26.2957 24.291 27.1991 22.037C27.6866 20.8358 28.1742 18.641 28.1742 17.5881C28.1742 16.9059 28.2172 16.817 29.0202 16.0013C29.4934 15.5268 29.9379 15.0078 30.0239 14.8595C30.1673 14.5777 30.153 14.5777 29.4217 14.8298C28.2028 15.2747 28.0308 15.2154 28.633 14.548C29.0775 14.0735 29.6081 13.2134 29.6081 12.9613C29.6081 12.9168 29.393 12.9909 29.1492 13.1244C28.8911 13.2727 28.3176 13.4951 27.8874 13.6286L27.113 13.8807L26.4104 13.3913C26.0233 13.1244 25.4784 12.8278 25.1916 12.7388C24.4603 12.5312 23.3418 12.5609 22.6822 12.7982C20.8898 13.4655 19.757 15.1857 19.886 17.0691Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="contact">
+                        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21C0 9.40202 9.17816 0 20.5 0C31.8218 0 41 9.40202 41 21C41 32.598 31.8218 42 20.5 42C9.17816 42 0 32.598 0 21Z" fill="#AF19AC"/>
+                            <path d="M14.7931 12.9699C14.7629 11.5679 13.7842 10.5 12.1949 10.5C10.6057 10.5 9.56665 11.5679 9.56665 12.9699C9.56665 14.3428 10.575 15.4414 12.1346 15.4414H12.1643C13.7842 15.4414 14.7931 14.3428 14.7931 12.9699Z" fill="white"/>
+                            <path d="M14.4871 17.3932H9.84137V31.6922H14.4871V17.3932Z" fill="white"/>
+                            <path d="M25.8925 17.0574C28.9496 17.0574 31.2415 19.1015 31.2415 23.4935L31.2413 31.6921H26.5957V24.0422C26.5957 22.1207 25.9235 20.8095 24.2417 20.8095C22.9582 20.8095 22.1937 21.6934 21.8579 22.5472C21.7351 22.8531 21.705 23.2794 21.705 23.7068V31.6925H17.0586C17.0586 31.6925 17.1199 18.7353 17.0586 17.3935H21.705V19.4189C22.3216 18.4452 23.4259 17.0574 25.8925 17.0574Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="contact">
+                        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21C0 9.40202 9.17816 0 20.5 0C31.8218 0 41 9.40202 41 21C41 32.598 31.8218 42 20.5 42C9.17816 42 0 32.598 0 21Z" fill="#AF19AC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M31.4333 20.9845C31.4333 21.7419 31.358 22.4983 31.2102 23.2356C31.066 23.9554 30.8525 24.662 30.5727 25.3376C30.2994 26.0011 29.9604 26.6406 29.5642 27.2369C29.174 27.8295 28.7244 28.3855 28.2306 28.8922C27.7357 29.3968 27.1911 29.8561 26.6129 30.2575C26.0289 30.6605 25.4037 31.0073 24.7556 31.2886C24.0952 31.5737 23.4038 31.7921 22.7017 31.9395C21.981 32.0914 21.24 32.1689 20.4995 32.1689C19.7585 32.1689 19.0174 32.0914 18.2978 31.9395C17.5947 31.7921 16.9033 31.5737 16.2434 31.2886C15.5953 31.0073 14.9695 30.6605 14.3855 30.2575C13.8073 29.8561 13.2627 29.3968 12.7689 28.8922C12.2745 28.3855 11.825 27.8295 11.4342 27.2369C11.0402 26.6406 10.7006 26.0011 10.4262 25.3376C10.1464 24.662 9.93237 23.9553 9.78768 23.2356C9.64141 22.4983 9.56665 21.7419 9.56665 20.9845C9.56665 20.2265 9.64137 19.4685 9.78773 18.7328C9.93241 18.013 10.1465 17.3053 10.4263 16.6308C10.7007 15.9668 11.0402 15.3267 11.4342 14.7303C11.825 14.1373 12.2746 13.5824 12.7689 13.075C13.2628 12.5704 13.8073 12.1123 14.3855 11.7114C14.9696 11.3067 15.5953 10.96 16.2434 10.6782C16.9033 10.3925 17.5947 10.1735 18.2978 10.0272C19.0175 9.87647 19.7585 9.8 20.4995 9.8C21.24 9.8 21.981 9.87647 22.7018 10.0272C23.4038 10.1736 24.0952 10.3925 24.7556 10.6782C25.4037 10.9599 26.0289 11.3067 26.613 11.7114C27.1912 12.1123 27.7358 12.5704 28.2306 13.075C28.7245 13.5824 29.174 14.1373 29.5643 14.7303C29.9604 15.3267 30.2994 15.9668 30.5727 16.6308C30.8525 17.3053 31.066 18.013 31.2102 18.7328C31.358 19.4685 31.4333 20.2265 31.4333 20.9845ZM16.5156 12.3454C13.9119 13.6032 11.9685 16.0574 11.3626 19.0152C11.6087 19.0174 15.4996 19.0676 19.9826 17.8492C18.3666 14.9122 16.64 12.5153 16.5156 12.3454ZM20.7562 19.3199C15.9486 20.7922 11.3353 20.6863 11.1699 20.6797C11.1672 20.7824 11.1624 20.8818 11.1624 20.9845C11.1624 23.4381 12.0673 25.675 13.5547 27.3664C13.5515 27.3614 16.1067 22.7244 21.1454 21.0577C21.2671 21.0162 21.391 20.979 21.5138 20.943C21.2795 20.4002 21.0237 19.8562 20.7562 19.3199ZM26.6658 13.8161C25.0219 12.3334 22.8635 11.434 20.4995 11.434C19.7408 11.434 19.0046 11.528 18.2993 11.7016C18.4392 11.8939 20.193 14.2738 21.7898 17.273C25.3129 15.922 26.6428 13.8511 26.6658 13.8161ZM22.1503 22.5256C22.1295 22.5326 22.1087 22.5387 22.0883 22.5463C16.5793 24.5109 14.7803 28.47 14.7608 28.5132C16.3459 29.7742 18.3341 30.5349 20.4995 30.5349C21.7925 30.5349 23.0242 30.2656 24.1448 29.778C24.0065 28.9435 23.4641 26.0186 22.1503 22.5256ZM25.7171 28.9053C27.8136 27.4581 29.3026 25.1601 29.718 22.4982C29.5258 22.4349 26.9135 21.589 23.8997 22.0832C25.1244 25.526 25.622 28.3297 25.7171 28.9053ZM22.5085 18.6962C22.7252 19.1517 22.9351 19.6153 23.1289 20.0812C23.1978 20.2483 23.265 20.4122 23.3307 20.576C26.5382 20.1631 29.6983 20.8577 29.8334 20.8861C29.812 18.6219 29.0202 16.544 27.7101 14.9171C27.6925 14.9427 26.195 17.1561 22.5085 18.6962Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="contact">
+                        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21C0 9.40202 9.17816 0 20.5 0C31.8218 0 41 9.40202 41 21C41 32.598 31.8218 42 20.5 42C9.17816 42 0 32.598 0 21Z" fill="#AF19AC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.501 9.8C17.5317 9.8 17.159 9.8133 15.9928 9.86767C14.8288 9.92227 14.0343 10.111 13.3391 10.388C12.62 10.6741 12.01 11.0567 11.4023 11.6795C10.7942 12.3021 10.4206 12.9269 10.1404 13.6633C9.86937 14.3757 9.68487 15.1898 9.63248 16.3817C9.58032 17.5764 9.56665 17.9584 9.56665 21.0001C9.56665 24.0419 9.57986 24.4225 9.63271 25.6171C9.68623 26.8095 9.87051 27.6234 10.1407 28.3355C10.4201 29.0721 10.7937 29.697 11.4016 30.3195C12.0091 30.9426 12.6191 31.3262 13.3378 31.6122C14.0334 31.8892 14.8281 32.078 15.9919 32.1326C17.1581 32.1869 17.5305 32.2002 20.4996 32.2002C23.4692 32.2002 23.8407 32.1869 25.007 32.1326C26.1709 32.078 26.9663 31.8892 27.662 31.6122C28.3808 31.3262 28.9899 30.9426 29.5974 30.3195C30.2056 29.697 30.5791 29.0721 30.8593 28.3357C31.1281 27.6234 31.3126 26.8092 31.3673 25.6174C31.4197 24.4227 31.4333 24.0419 31.4333 21.0001C31.4333 17.9584 31.4197 17.5766 31.3673 16.3819C31.3126 15.1896 31.1281 14.3757 30.8593 13.6636C30.5791 12.9269 30.2056 12.3021 29.5974 11.6795C28.9892 11.0565 28.3811 10.6738 27.6613 10.388C26.9643 10.111 26.1693 9.92227 25.0054 9.86767C23.8391 9.8133 23.4678 9.8 20.4976 9.8H20.501ZM19.5201 11.8183C19.8112 11.8179 20.1361 11.8183 20.501 11.8183C23.4202 11.8183 23.7662 11.8291 24.919 11.8827C25.985 11.9327 26.5636 12.1151 26.949 12.2684C27.4592 12.4714 27.823 12.7141 28.2054 13.1061C28.5881 13.4981 28.825 13.8714 29.0236 14.3941C29.1732 14.7885 29.3516 15.3811 29.4001 16.4731C29.4525 17.6538 29.4639 18.0085 29.4639 20.9975C29.4639 23.9866 29.4525 24.3412 29.4001 25.5219C29.3514 26.6139 29.1732 27.2066 29.0236 27.6009C28.8254 28.1236 28.5881 28.4958 28.2054 28.8875C27.8227 29.2795 27.4594 29.5222 26.949 29.7252C26.564 29.8792 25.985 30.0612 24.919 30.1111C23.7664 30.1648 23.4202 30.1765 20.501 30.1765C17.5815 30.1765 17.2355 30.1648 16.0829 30.1111C15.0169 30.0607 14.4384 29.8783 14.0527 29.725C13.5425 29.522 13.1781 29.2793 12.7954 28.8873C12.4127 28.4953 12.1758 28.1229 11.9772 27.6C11.8275 27.2057 11.6492 26.613 11.6007 25.521C11.5483 24.3403 11.5378 23.9856 11.5378 20.9947C11.5378 18.0038 11.5483 17.651 11.6007 16.4703C11.6494 15.3783 11.8275 14.7857 11.9772 14.3908C12.1754 13.8682 12.4127 13.4948 12.7954 13.1028C13.1781 12.7108 13.5425 12.4682 14.0527 12.2647C14.4381 12.1107 15.0169 11.9287 16.0829 11.8785C17.0915 11.8319 17.4824 11.8179 19.5201 11.8155V11.8183ZM26.3372 13.678C25.6128 13.678 25.0251 14.2793 25.0251 15.0216C25.0251 15.7636 25.6128 16.3656 26.3372 16.3656C27.0615 16.3656 27.6492 15.7636 27.6492 15.0216C27.6492 14.2796 27.0615 13.678 26.3372 13.678ZM20.501 15.2484C17.4003 15.2484 14.8862 17.8237 14.8862 21.0001C14.8862 24.1765 17.4003 26.7506 20.501 26.7506C23.6018 26.7506 26.1149 24.1765 26.1149 21.0001C26.1149 17.8237 23.6018 15.2484 20.501 15.2484ZM20.501 17.2667C22.5137 17.2667 24.1455 18.9381 24.1455 21.0001C24.1455 23.0618 22.5137 24.7335 20.501 24.7335C18.4881 24.7335 16.8565 23.0618 16.8565 21.0001C16.8565 18.9381 18.4881 17.2667 20.501 17.2667Z" fill="white"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="contact">
+                        <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 21C0 9.40202 9.17816 0 20.5 0C31.8218 0 41 9.40202 41 21C41 32.598 31.8218 42 20.5 42C9.17816 42 0 32.598 0 21Z" fill="#AF19AC"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M29.043 13.7807C29.9839 14.0452 30.7249 14.8245 30.9764 15.8141C31.4333 17.6077 31.4333 21.35 31.4333 21.35C31.4333 21.35 31.4333 25.0922 30.9764 26.886C30.7249 27.8756 29.9839 28.6549 29.043 28.9195C27.3379 29.4 20.5 29.4 20.5 29.4C20.5 29.4 13.6621 29.4 11.9568 28.9195C11.0159 28.6549 10.275 27.8756 10.0235 26.886C9.56665 25.0922 9.56665 21.35 9.56665 21.35C9.56665 21.35 9.56665 17.6077 10.0235 15.8141C10.275 14.8245 11.0159 14.0452 11.9568 13.7807C13.6621 13.3 20.5 13.3 20.5 13.3C20.5 13.3 27.3379 13.3 29.043 13.7807ZM18.45 18.2V25.2L23.9167 21.7001L18.45 18.2Z" fill="white"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <p class="footer__text text-center text-md-end">Copyright © 2022 All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End roadmap -->
+
+    <script src="assets/js/plugins/jquery.js"></script>
+    <script src="assets/js/plugins/slick.min.js"></script>
+    <script src="assets/js/plugins/wow.min.js"></script>
+    <script src="assets/js/index.js"></script>
+
+    <script>
+        wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: false,
+            live: false
+        })
+        wow.init();
+    </script>
+</body>
+
+</html>
