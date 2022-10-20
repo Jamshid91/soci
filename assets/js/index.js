@@ -1,6 +1,26 @@
 const menuBurger = document.querySelector('.menu-burger'),
       mobileMenu = document.querySelector('.mobile-menu'),
-      loader = document.querySelector('.loader')
+      loader = document.querySelector('.loader'),
+      lightpaper = document.querySelectorAll('.lightpaper'),
+      modal = document.querySelector('.modal-box'),
+      modalClose = document.querySelector('.modal-box__close')
+
+
+      lightpaper.forEach(btn => {
+        btn.addEventListener('click', () => {
+          modal.classList.remove('d-none')
+        });
+      });
+
+      modalClose.addEventListener('click', () => {
+        modal.classList.add('d-none');
+      });
+
+      document.addEventListener('click', (e) => {
+        if(e.target == modal) {
+          modal.classList.add('d-none');
+        }
+      })
 
 
       window.onload = function () {

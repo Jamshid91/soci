@@ -1,0 +1,91 @@
+.aside {
+    margin-bottom: 100px;
+}
+.aside .aside-card {
+    width: 24%;
+    background: #181618;
+    color: #fff;
+    position: relative;
+    padding: 100px 20px 80px;
+    border-radius: 15px;
+    border: 2px solid #181618;
+    transition: .3s all;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.aside .aside-card:hover {
+    border: 2px solid #9500ff;
+}
+
+.aside-card__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #9500ff;
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.aside-card__title {
+    font-family: serif;
+    font-family:ethnocen,sans-serif;
+    font-size: 20px;
+    background: -webkit-radial-gradient(108.58% 890.39% at 4.16% -85.69%,#9500ff 0,#7c1fff 17%,#3b71ff 55%,#366cfb 66%,#295eef 78%,#1447db 91%,#0032c9 100%),#8247e5;
+    background: -o-radial-gradient(108.58% 890.39% at 4.16% -85.69%,#9500ff 0,#7c1fff 17%,#3b71ff 55%,#366cfb 66%,#295eef 78%,#1447db 91%,#0032c9 100%),#8247e5;
+    background: radial-gradient(108.58% 890.39% at 4.16% -85.69%,#9500ff 0,#7c1fff 17%,#3b71ff 55%,#366cfb 66%,#295eef 78%,#1447db 91%,#0032c9 100%),#8247e5;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-transform: uppercase;
+}
+.aside-card__title-sub {
+    font-family: ink-free,sans-serif;
+    line-height: 29px;
+    font-size: 20px;
+    color: #8247e5;
+    text-align: center;
+    text-transform: uppercase;
+}
+.aside-card__text {
+    margin: 15px 0 25px;
+    text-align: left;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+}
+.aside-card__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    background: -webkit-radial-gradient(108.58% 890.39% at 4.16% -85.69%,#9500ff 0,#7c1fff 17%,#3b71ff 55%,#366cfb 66%,#295eef 78%,#1447db 91%,#0032c9 100%),#8247e5;
+    background: -o-radial-gradient(108.58% 890.39% at 4.16% -85.69%,#9500ff 0,#7c1fff 17%,#3b71ff 55%,#366cfb 66%,#295eef 78%,#1447db 91%,#0032c9 100%),#8247e5;
+    background: radial-gradient(108.58% 890.39% at 4.16% -85.69%,#9500ff 0,#7c1fff 17%,#3b71ff 55%,#366cfb 66%,#295eef 78%,#1447db 91%,#0032c9 100%),#8247e5;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.aside-card__btn:hover {
+    color: #fff;
+    opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+   .aside .aside-card {
+    width: 48%;
+   }
+}
+@media (max-width: 576px) {
+    .aside .aside-card {
+     width: 100%;
+    }
+ }
